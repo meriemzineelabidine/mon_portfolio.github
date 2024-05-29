@@ -1,0 +1,205 @@
+/* Reset default styles */
+* {
+    margin: 0; /* Reset margin to zero */
+    padding: 0; /* Reset padding to zero */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Set global font and line height */
+body {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); /* Beautiful background gradient */
+    background-attachment: fixed; /* Fixed background position */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center-align the background image */
+}
+
+/* Navigation Bar */
+.navbar {
+    list-style-type: none; /* Remove list bullets */
+    display: flex; /* Display navigation items in a row */
+    justify-content: center; /* Center-align navigation items horizontally */
+    background-color: #333; /* Background color for the navigation bar */
+    padding: 15px 0; /* Add padding above and below the navigation bar */
+    position: fixed; /* Make the navigation bar fixed */
+    width: 100%; /* Stretch the navigation bar across the screen */
+    top: 0; /* Position the navigation bar at the top */
+    z-index: 1000; /* Ensure the navigation bar appears above other content */
+}
+
+.navbar li {
+    margin: 0 15px; /* Add spacing between navigation items */
+}
+
+.navbar a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #fff; /* Set text color to white */
+    font-weight: bold; /* Make the text bold */
+    transition: color 0.3s; /* Add a smooth color transition on hover */
+}
+
+/* Change link color on hover */
+.navbar a:hover {
+    color: #ff9900; /* Change text color to orange on hover */
+}
+
+/* Header */
+.header {
+    background-image: url('https://source.unsplash.com/1600x900/?technology'); /* Set a background image for the header */
+    background-size: cover; /* Scale the background image to cover the entire header */
+    background-position: center; /* Center-align the background image */
+    text-align: center; /* Center-align text within the header */
+    color: #fff; /* Set text color to white */
+    padding: 200px 0; /* Add padding to the top and bottom of the header */
+}
+
+.header h1 {
+    font-size: 3rem; /* Set the font size for the header title */
+    margin-bottom: 20px; /* Add spacing below the header title */
+}
+
+/* Section */
+.section {
+    padding: 80px 0; /* Add padding to the top and bottom of sections */
+    text-align: center; /* Center-align text within sections */
+}
+
+.section h2 {
+    font-size: 2rem; /* Set the font size for section titles */
+    margin-bottom: 30px; /* Add spacing below section titles */
+    color: #333; /* Set text color to a dark gray */
+}
+
+.section p {
+    font-size: 1.1rem; /* Set the font size for section text */
+    color: #777; /* Set text color to a lighter gray */
+}
+
+.about-description {
+    color: #333; /* Set text color to a dark gray */
+    font-size: 1.2rem; /* Set the font size for the paragraph */
+    line-height: 1.6; /* Set the line height for better readability */
+    margin-top: 20px; /* Add spacing above the paragraph */
+}
+
+/* Style the section content container */
+.section-content {
+    max-width: 800px; /* Limit the maximum width of the section content */
+    margin: 0 auto; /* Center-align the section content horizontally */
+    text-align: left; /* Left-align the text within the section content */
+}
+
+/* Portfolio */
+.project {
+    background-color: #f9f9f9; /* Set background color for project containers */
+    border: 1px solid #ddd; /* Add a border around project containers */
+    border-radius: 5px; /* Round the corners of project containers */
+    padding: 20px; /* Add padding inside project containers */
+    margin: 20px 0; /* Add spacing between project containers */
+    transition: box-shadow 0.3s; /* Add a smooth box shadow transition on hover */
+}
+
+/* Add shadow effect on project hover */
+.project:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
+}
+
+.project img {
+    max-width: 100%; /* Ensure images don't exceed their container width */
+    height: auto; /* Maintain image aspect ratio */
+    border-radius: 5px; /* Round the corners of project images */
+}
+
+.project h3 {
+    margin: 15px 0; /* Add spacing above and below project titles */
+    font-size: 1.5rem; /* Set the font size for project titles */
+    color: #333; /* Set text color to a dark gray */
+}
+
+/* Footer */
+.footer {
+    background-color: #333; /* Set background color for the footer */
+    color: #fff; /* Set text color to white */
+    text-align: center; /* Center-align text within the footer */
+    padding: 20px 0; /* Add padding to the top and bottom of the footer */
+}
+
+.footer p {
+    margin: 0; /* Remove default margin for paragraphs */
+    font-size: 1rem; /* Set the font size for footer text */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    /* Adjust navigation for smaller screens */
+    .navbar {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center; /* Center-align navigation items horizontally */
+    }
+    .navbar li {
+        margin: 10px 0; /* Add spacing between stacked navigation items */
+    }
+}
+
+/* Add this CSS to your existing styles.css file */
+
+/* Contact Section */
+#contact {
+    background-color: #fff; /* Set background color for the contact section */
+}
+
+.contact-info {
+    font-size: 1.2rem; /* Set the font size for the contact info */
+    color: #555; /* Set text color to a dark gray */
+}
+
+.contact-email {
+    font-size: 1.5rem; /* Set the font size for the contact email */
+    color: #333; /* Set text color to a darker gray */
+    margin-bottom: 30px; /* Add spacing below the contact email */
+}
+
+/* Contact Form Styles */
+.contact-form {
+    max-width: 500px; /* Limit the maximum width of the form */
+    margin: 0 auto; /* Center-align the form horizontally */
+    text-align: left; /* Left-align the form content */
+}
+
+.contact-form label {
+    display: block; /* Display labels as block elements */
+    margin-bottom: 8px; /* Add spacing below labels */
+    font-size: 1.1rem; /* Set the font size for labels */
+    color: #333; /* Set text color to a dark gray */
+}
+
+.contact-form input,
+.contact-form textarea {
+    display: block; /* Display inputs and textarea as block elements */
+    width: 100%; /* Set the width to 100% of the container */
+    padding: 10px; /* Add padding inside inputs and textarea */
+    margin-bottom: 20px; /* Add spacing below inputs and textarea */
+    border: 1px solid #ccc; /* Add a 1px border with light gray color */
+    border-radius: 5px; /* Round the corners of inputs and textarea */
+    font-size: 1rem; /* Set the font size */
+}
+
+.contact-form textarea {
+    resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+.contact-form button {
+    background-color: #ff9900; /* Set background color for the button */
+    color: #fff; /* Set text color to white */
+    border: none; /* Remove the button border */
+    padding: 10px 20px; /* Add padding inside the button */
+    border-radius: 5px; /* Round the corners of the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 1rem; /* Set the font size */
+    transition: background-color 0.3s; /* Add a smooth background color transition */
+}
+
+/* Change button background color on hover */
+.contact-form button:hover {
+    background-color: #e68a00; /* Change background color to a darker shade on hover */
+}
+
